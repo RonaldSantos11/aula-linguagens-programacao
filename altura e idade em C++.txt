@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int idade;
+    float altura;
+    cin>>idade;
+    cin>>altura;
+    cout <<"IDADE:"<<idade<< endl;
+    cout <<"ALTURA:"<<altura<< endl;
+
+    return 0;
+}
