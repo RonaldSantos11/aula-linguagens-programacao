@@ -1,0 +1,27 @@
+valor1 = float(input("Digite o valor1:(ou digite -1 para encerrar o programa): "))
+while valor1 != -1:
+    operador = input("Digite o operador (+, -, *, /):")
+    if operador == "-1":
+        break
+
+    valor2 = float(input("Digite o valor:"))
+    if valor2 == -1:
+      break
+
+    if operador == '+':
+        resultado = valor1 + valor2
+    elif operador == '-':
+        resultado = valor1 - valor2
+    elif operador == '*':
+        resultado = valor1 * valor2
+    elif operador == '/':
+        if valor2 != 0:
+            resultado = valor1 / valor2
+        else:
+            print("Erro: divisão por zero!")
+            continue
+    else:
+        print("Operador inválido!")
+        continue
+
+    print("Resultado:", resultado)
